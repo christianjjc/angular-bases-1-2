@@ -73,4 +73,11 @@ export class MainPageComponent {
       power: 4000, // Durante la saga Saiyan.
     },
   ];
+
+  onNewCharacter(character: CharacterI): void {
+    console.log('main page');
+    console.log(character);
+
+    this.characters.push(character);
+  }
 }
